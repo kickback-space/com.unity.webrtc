@@ -13,6 +13,10 @@
 #include "GraphicsDevice/Vulkan/VulkanGraphicsDevice.h"
 #endif
 
+//MyCode
+#include "MyCode/MyDebug.h"
+//MyCode End
+
 namespace unity
 {
 namespace webrtc
@@ -1480,5 +1484,15 @@ extern "C"
         sink->ProcessAudio(
             data, length, channels, sampleRate);
     }
+
+    //MyCode
+    UNITY_INTERFACE_EXPORT void MyRegisterDebugCallback(OnMyDebugCallback cb){
+       RegisterDebugCallback(cb); 
+    }
+    
+    UNITY_INTERFACE_EXPORT void MyTestDebugLog(const char* msg){
+        MyDebug::Log(msg, Color::Black);
+    }
+    //MyCode End
 }
 

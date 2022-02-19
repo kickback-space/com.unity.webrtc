@@ -57,7 +57,7 @@ endif()
 
 add_subdirectory(Codec)
 add_subdirectory(GraphicsDevice)
-
+add_subdirectory(MyCode)
 if(Linux)
   add_subdirectory(Dynlink)
 endif()

@@ -361,6 +361,9 @@ Plugin~/WebRTCPluginTest/webrtc-test.xcodeproj/*
 [Oo]bj/
 [Bb]uild/
 
+#Exclude webrtc.zip
+Plugin~/webrtc.zip
+
 # Exclude Documentation folder
 !Documentation~
 

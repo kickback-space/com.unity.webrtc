@@ -34,6 +34,7 @@ namespace webrtc
         virtual uint32_t Id() const { return m_encoderId; }
 
         CodecInitializationResult GetCodecInitializationResult() const { return m_initializationResult; }
+
     protected:
         CodecInitializationResult m_initializationResult = CodecInitializationResult::NotInitialized;
         uint32_t m_encoderId;
